@@ -43,15 +43,53 @@ For more examples and ideas, visit:
    ```bash
     docker run nginx  
    ```
-   
+![Screenshot](images/Screenshot%20from%202024-05-04%2012-59-16.png)
+
+```bash
+    docker run -d nginx  
+   ```
+![Screenshot](images/Screenshot%20from%202024-05-04%2013-06-23.png)
 
 
 ### Download bitnami/laravel image (version 9.5.2) List all images Remove laravel image 
  
+ ```bash
+ docker pull bitnami/laravel:9.5.2  
+ ```
+ ![Screenshot](images/Screenshot%20from%202024-05-04%2013-16-07.png)
+
+  ```bash
+ docker images  
+ ```
+  ![Screenshot](images/Screenshot%20from%202024-05-04%2013-17-55.png)
+
+ ```bash
+   docker rmi bitnami/laravel:9.5.2
+   ```
+  ![Screenshot](images/Screenshot%20from%202024-05-04%2013-19-40.png)
+
+
 ### Create a container from httpd image  Map apache server running on the container to port 82 on your local machine Check that it is working using your browser
+
+```bash
+docker run -p 82:80 httpd
+```
+  ![Screenshot](images/Screenshot%20from%202024-05-04%2013-41-07.png)
+   ![Screenshot](images/Screenshot%20from%202024-05-04%2013-45-04.png)
+
  
 ### Create file inside foreground container then list all files (use interactive mode) Remove this container 
+```bash
+docker run httpd
+```
+   ![Screenshot](images/Screenshot%20from%202024-05-04%2013-56-38.png)
 
 ### Print /etc/hosts file from background container (without interactive mode)
- 
+
+   ![Screenshot](images/Screenshot%20from%202024-05-04%2014-00-30.png)
+
 ### Create mysql container, map tmp directory (on your local machine) to /var/lib (on the container).<br/>Create a volume lab1, start two containers from nginx image and mount this volume to /app, create a file from the first container on the path mapped to this volume and check that it exists on the second container. 
+
+   ![Screenshot](images/Screenshot%20from%202024-05-04%2014-09-30.png)
+      ![Screenshot](images/Screenshot%20from%202024-05-04%2014-15-03.png)
+
