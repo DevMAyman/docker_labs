@@ -96,7 +96,6 @@ docker run httpd
 
 # Lab 2
  
-1.
 ####  Create an image to containerize a simple php app that prints hello world, use apache server
 
 ```dockerfile
