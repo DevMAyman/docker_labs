@@ -169,7 +169,6 @@ docker run my-ubuntu-image
 ```bash
 docker run my-ubuntu-image ls lsa
 ```
-![Screenshot](images/image%20copy%202.png)
 
 
 ### Use both cmd and entrypoint to echo hello + the parameter passed
@@ -181,16 +180,12 @@ docker run my-ubuntu-image
 
 
 ```bash
-docker run my-ubuntu-image ls lsa
+docker run my-ubuntu-image mo
 ```
 ![Screenshot](images/image%20copy%203.png)
 
  
 #### Host a react application on nginx. (Use multi-stage dockerfile).
-
-
-![Screenshot](images/image%20copy%208.png)
-
 
 ```dockerfile
 #React app image
@@ -240,3 +235,5 @@ EXPOSE 80/tcp
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
 
 ```
+
+![Screenshot](images/image%20copy%208.png)
